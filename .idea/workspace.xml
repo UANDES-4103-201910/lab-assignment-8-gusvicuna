@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aace4062-17df-49bf-b978-20384848d0e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app/assets/javascripts/keyboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/keyboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/keyboard_demos/demo1.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/keyboard_demos/demo1.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -23,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/keyboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state relative-caret-position="360">
+              <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -36,7 +37,14 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/keyboard_demos/demo1.html.erb">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="177" column="22" selection-start-line="177" selection-start-column="9" selection-end-line="177" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -47,9 +55,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/app/views/keyboard_demos/demo1.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/keyboard.js" />
       </list>
     </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -132,7 +148,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -256,12 +276,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557348992237</updated>
-      <workItem from="1557348995964" duration="993000" />
+      <workItem from="1557348995964" duration="3355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="993000" />
+    <option name="totallyTimeSpent" value="3355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -277,7 +297,7 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -293,7 +313,7 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/lab_assignment_8_gusvicuna@Development__lab_assignment_8_gusvicuna.rcov" NAME="Development: lab-assignment-8-gusvicuna Coverage Results" MODIFIED="1557349980723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lab-assignment-8-gusvicuna" />
+    <SUITE FILE_PATH="coverage/lab_assignment_8_gusvicuna@Development__lab_assignment_8_gusvicuna.rcov" NAME="Development: lab-assignment-8-gusvicuna Coverage Results" MODIFIED="1557352213474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lab-assignment-8-gusvicuna" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/cable.js">
@@ -318,12 +338,19 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/keyboard_demos/demo1.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="177" column="22" selection-start-line="177" selection-start-column="9" selection-end-line="177" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/keyboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state relative-caret-position="360">
+          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
         </state>
       </provider>
     </entry>
