@@ -1,0 +1,7 @@
+Started GET "/" for ::1 at 2019-05-08 17:14:47 -0400
+Processing by KeyboardDemosController#demo1 as HTML
+  Rendering keyboard_demos/demo1.html.erb within layouts/application
+  Rendered keyboard_demos/demo1.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1322ms (Views: 1317.1ms | ActiveRecord: 0.0ms)
+
+
