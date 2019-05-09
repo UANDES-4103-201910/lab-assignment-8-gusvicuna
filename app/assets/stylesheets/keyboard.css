@@ -45,9 +45,13 @@ html {
 }
 
 .key-special {
-	background-color: #ff9900;
+	background-color: #17905b;
 }
 
 .key-wide {
 	flex: 2 0 auto;
+}
+
+#textAreaInput{
+    color: #17905b
 }

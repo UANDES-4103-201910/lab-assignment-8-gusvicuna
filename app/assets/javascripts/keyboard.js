@@ -7,21 +7,16 @@ $(() => {
         constructor(kcontainer){
 
             this.kcontainer = kcontainer;
+            this.lower = 1;
         }
 
         KeyPressed(keydiv){
-            var key=keydiv.text()
+
+            var key=keydiv.text();
             console.log(key);
             var textInput = document.getElementById("textAreaInput")
             if (key.includes("Tab")){
                 textInput.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;";
-            }
-            else if (key.includes("Accept")){
-                textInput.innerHTML = "";
-                alert("Accepted");
-            }
-            else if (key.includes("Cancel")){
-                textInput.innerHTML = ""
             }
             else if (key.includes("Enter")){
                 textInput.innerHTML += "<br>"
@@ -32,9 +27,27 @@ $(() => {
             else if (keydiv.hasClass("key-space")){
                 textInput.innerHTML += "&nbsp;"
             }
+            else if (key.includes("Accept")){
+                textInput.innerHTML = "";
+                alert("Input Accepted");
+            }
+            else if (key.includes("Cancel")){
+                textInput.innerHTML = "";
+                alert("Input Canceled");
+            }
+            else if (key.includes("Shift")){
+                if (this.lower==1){
+                    this.lower = 0;
+                }
+                else{
+                    this.lower =1;
+                }
+            }
             else{
-                key = key.toLowerCase();
-                textInput.innerHTML += key.slice(0, -1)
+                if (this.lower == 1){
+                    key = key.toLowerCase();
+                }
+                textInput.innerHTML += key.trim()
             }
 
         }
