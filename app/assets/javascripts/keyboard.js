@@ -4,36 +4,37 @@ $(() => {
 
     class KeyboardController {
 
-        constructor(kcontainer,textAreaInput){
+        constructor(kcontainer){
 
             this.kcontainer = kcontainer;
-            this.textAreaInput = textAreaInput;
         }
 
-        KeyPressed(key){
-
+        KeyPressed(keydiv){
+            var key=keydiv.text()
             console.log(key);
             var textInput = document.getElementById("textAreaInput")
             if (key.includes("Tab")){
                 textInput.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;";
             }
             else if (key.includes("Accept")){
+                textInput.innerHTML = "";
                 alert("Accepted");
-                textInput.innerHTML = ""
             }
             else if (key.includes("Cancel")){
-                alert("Canceled");
                 textInput.innerHTML = ""
             }
             else if (key.includes("Enter")){
                 textInput.innerHTML += "<br>"
             }
             else if (key.includes("Bksp")){
-                textInput.innerHTML = textInput.innerHTML.slice(0, textInput.innerHTML.length-1);
+                textInput.innerHTML = textInput.innerHTML.slice(0, -1);
+            }
+            else if (keydiv.hasClass("key-space")){
+                textInput.innerHTML += "&nbsp;"
             }
             else{
                 key = key.toLowerCase();
-                textInput.innerHTML += key
+                textInput.innerHTML += key.slice(0, -1)
             }
 
         }
@@ -41,12 +42,15 @@ $(() => {
         ToggleVisibility(){
 
             var kbCont = document.getElementById("kcontainer");
+            var vsButton = document.getElementById("kbVisibilityButton")
 
-            if (kbCont.style.display === "block"){
-                kbCont.style.display = "none";
+            if (kbCont.style.display === "none"){
+                kbCont.style.display = "block";
+                vsButton.innerHTML = "Hide Keyboard";
             }
             else{
-                kbCont.style.display = "block";
+                kbCont.style.display = "none";
+                vsButton.innerHTML = "Show Keyboard";
             }
 
         }
@@ -55,15 +59,14 @@ $(() => {
     }
 
 
-    var mykeyboard = new KeyboardController("kcontainer","textAreaInput")
-    var kbVisibilityButton = document.getElementById("kbVisibilityButton")
+    var mykeyboard = new KeyboardController("kcontainer")
 
-    kbVisibilityButton.addEventListener('click',function(){
+    $("#kbVisibilityButton").click(function () {
         mykeyboard.ToggleVisibility();
-    },false);
+    })
 
     $(".key").click(function(){
-        mykeyboard.KeyPressed($(this).text());
+        mykeyboard.KeyPressed($(this));
     });
 
 
