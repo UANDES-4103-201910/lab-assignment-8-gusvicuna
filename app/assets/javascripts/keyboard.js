@@ -15,25 +15,22 @@ $(() => {
             var key=keydiv.text();
             console.log(key);
             var textInput = document.getElementById("textAreaInput")
+            var originalLength = textInput.innerHTML.length;
             if (key.includes("Tab")){
                 textInput.innerHTML += "&nbsp;&nbsp;&nbsp;&nbsp;";
             }
             else if (key.includes("Enter")){
                 textInput.innerHTML += "<br>"
             }
-            else if (key.includes("Bksp")){
-                textInput.innerHTML = textInput.innerHTML.slice(0, -1);
-            }
             else if (keydiv.hasClass("key-space")){
                 textInput.innerHTML += "&nbsp;"
             }
-            else if (key.includes("Accept")){
-                textInput.innerHTML = "";
-                alert("Input Accepted");
-            }
-            else if (key.includes("Cancel")){
-                textInput.innerHTML = "";
-                alert("Input Canceled");
+            else if (key.includes("Bksp")){
+                textInput.innerHTML = textInput.innerHTML.slice(0, -1);
+                if (textInput.innerHTML.length==originalLength){
+                    textInput.innerHTML = textInput.innerHTML.substring(0, textInput.innerHTML.lastIndexOf("&nbsp;"))
+                }
+
             }
             else if (key.includes("Shift")){
                 if (this.lower==1){
@@ -42,6 +39,14 @@ $(() => {
                 else{
                     this.lower =1;
                 }
+            }
+            else if (key.includes("Accept")){
+                textInput.innerHTML = "";
+                alert("Input Accepted");
+            }
+            else if (key.includes("Cancel")){
+                textInput.innerHTML = "";
+                alert("Input Canceled");
             }
             else{
                 if (this.lower == 1){
